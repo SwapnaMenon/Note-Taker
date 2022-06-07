@@ -29,8 +29,6 @@ app.post("/api/notes",function(req,res){
     data.push(note)
     fs.writeFileSync("./db/db.json", JSON.stringify(data)) //convert the data into json////get whatever the old file has and new file entered- overwrite the old file with the new file //
     res.json(data) //send the data back to user for display//
-
-
 }) //post the data//
 
 app.listen(PORT,function(){
